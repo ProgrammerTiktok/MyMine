@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Untuk Kamu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            padding: 30px 20px;
+            background: url(girl-7828078_1280.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+        }
+        .input-name{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            border-radius: 6px;
+            padding: 20px;
+        }
+        .input-name h2{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 23px;
+        }        
+        .input-name input{
+            width: 100%;
+            padding: 10px 10px;
+            font-size: 18px;
+            font-weight: 600;
+            border: 2px solid rgb(249, 171, 184);
+            outline: none;
+            margin-top: 10px;
+            color: rgb(85, 82, 82);
+            border-radius: 6px;
+        }
+        .input-name button{
+            margin-top: 10px;
+            font-size: 18px;
+            padding: 10px 15px;
+            font-weight: 600;
+            border-radius: 6px;
+            outline: none;
+            border: none;
+            background: rgb(249, 171, 184);
+            color: white;
+        }
+        .next-1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            border-radius: 6px;
+            padding: 20px;
+        }
+        .next-1 h2{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 23px;
+        }        
+        .next-1 button{
+            margin-top: 20px;
+            font-size: 18px;
+            padding: 10px 15px;
+            font-weight: 600;
+            border-radius: 6px;
+            outline: none;
+            border: none;
+            background: rgb(249, 171, 184);
+            color: white;
+        }
+        .next-2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.5);
+            position: relative;
+            border-radius: 6px;
+            width: 100%;
+            padding: 40px 20px 20px ;
+        }
+        .next-2 i{
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            font-size: 32px;
+            color: white;
+        }
+        .next-2 p{
+            color: white;
+        }
+        
+        .box-img{
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 130px;
+            height: 130px;
+            border-radius: 100%;
+            margin-bottom: 30px;
+        }
+        .box-img img{
+            width: 80px;
+            height: 80px;
+        }
+        .typing-container {
+         display: flex;
+         flex-direction: column;
+         line-height: 1.5;
+        }
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid #333; /* Menggunakan garis sebagai kursor animasi */
+  white-space: nowrap;
+  margin: 0;
+  font-size: 16px;
+  animation: typing 4s ;
+  border: none;
+  transition: 2s ease-in-out;
+}
+.typing-text1 {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid #333; /* Menggunakan garis sebagai kursor animasi */
+  white-space: nowrap;
+  margin: 0;
+  font-size: 16px;
+  animation: typing 4s steps(40);
+  border: none;
+}
+.typing-text2 {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid #333; /* Menggunakan garis sebagai kursor animasi */
+  white-space: nowrap;
+  margin: 0;
+  font-size: 16px;
+  animation: typing 4s steps(40);
+  border: none;
+}
+.typing-text3 {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid #333; /* Menggunakan garis sebagai kursor animasi */
+  white-space: nowrap;
+  margin: 0;
+  font-size: 16px;
+  animation: typing 4s steps(40);
+  border: none;
+}
+.typing-text4 {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid #333; /* Menggunakan garis sebagai kursor animasi */
+  white-space: nowrap;
+  margin: 0;
+  font-size: 14px;
+  animation: typing 4s steps(40);
+  border: none;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+input[type="range"] {
+            -webkit-appearance: none;
+            width: 80%;
+            height: 10px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            margin-bottom: 20px;
+        }
+
+        input[type="range"]:hover {
+            opacity: 1;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: rgb(249, 171, 184);
+            cursor: pointer;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: rgb(249, 171, 184);
+            cursor: pointer;
+        }
+
+        .range{
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background: white;
+            border-radius: 6px;
+            position: fixed;
+            padding: 20px;
+            width: 90%;
+            gap: 10px;
+        }
+        .range i{
+            background: white;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 130px;
+            height: 130px;
+            font-size: 84px;
+            color:  rgb(249, 171, 184);
+            border-radius: 100%;
+            margin-bottom: 60px;
+        }
+        .box-lanjut{
+            width: 100%;
+            margin: 10px 0 0;
+        }
+        .box-lanjut button{
+            padding: 10px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 6px;
+            color: white;
+            outline: none;
+            border: none;
+            background-color: rgb(249, 171, 184);
+        }
+        .wa{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .wa button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 6px;
+            color: white;
+            outline: none;
+            border: none;
+            background-color: rgb(249, 171, 184);
+        }
+        .wa button i{
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+        }
+        .box-tanya{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: fixed;
+            background: white;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 40px 20px;
+            width: 90%;
+            border-radius: 6px;
+        }
+        .box-tanya h3{
+            color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .box-tanya .box-jawab{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+            width: 100%;
+        }
+        .box-jawab .btn-yes{
+            background: rgb(249, 171, 184);
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            padding: 10px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+        }
+        .range button{
+            background: rgb(249, 171, 184);
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            padding: 10px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+        }
+       .box-jawab .btn-no{
+            background: rgb(242, 97, 97);
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            padding: 10px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+        }
+        .box-lasttext{
+            margin-bottom: 10px;
+        }
+        .box-lasttext{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="input-name animate__animated animate__bounceIn">
+        <h2>Nama Kamu</h2>
+        <input type="text" ></input>
+        <button onclick="lanjut()">Lanjut</button>
+    </div>
+    <div class="next-1 animate__animated animate__bounceIn">
+        <h2 class="name-value">Nama Kamu</h2>
+        <button onclick="onNext()">OK</button>
+    </div>
+    <div class="box-img">
+        <img src="cutepanda.gif" alt="">
+    </div>
+    <div class="box-lasttext animate__animated animate__bounceIn">
+        <p>Rizky Zulkarnain ❤</p>
+    </div>
+    <div class="next-2 animate__animated animate__bounceIn">
+        <i><ion-icon name="mail-unread-outline"></ion-icon></i>
+        <div class="typing-container">
+            <p class="typing-text" id="a">Senyummu adalah alasan mengapa </p>
+            <p class="typing-text1"  id="b"> hari-hari ku selalu penuh warna,</p>
+            <p class="typing-text2" id="c">  seperti lukisan indah yang tak</p>
+            <p class="typing-text3" id="d">pernah pudar</p>
+            <p class="typing-text4" id="e" style="padding-top: 20px;">Dari: Rizky Zulkarnain Untuk</i></p>
+          </div>
+        </div>
+        <div class="box-lanjut">
+            <button onclick="btnLanjut()">Lanjut</button>
+        </div>
+        <div class="wa">
+            <button onclick="kirim()"><i><ion-icon name="logo-whatsapp"></ion-icon></i> Kirim</button>
+        </div>
+        <div class="box-tanya">
+            <h3>Sebelumnya, Kamu sayang ngak sama aku</h3>
+            <div class="box-jawab">
+                <button onclick="btnYes()" class="btn-yes">Sayang</button>
+                <button onclick="btnNo()" class="btn-no">Ngak Sayang</button>
+            </div>
+        </div>
+        <div class="range">
+            <i><ion-icon name="help"></ion-icon></i>
+          <h3>Seberapa sayang kamu?</h3>
+          <p>Antara 90-100% Ya</p>
+          <input type="range" min="90" max="100"  id="myRange">
+          <p>Value: <span id="demo"></span></p>
+          <button onclick="last()">OK</button>
+        </div>
+</section>
+
+
+<script type="text/javascript">
+    const inputName = document.querySelector(".input-name");
+    const valueInput = document.querySelector("input");
+    const valueName = document.querySelector(".name-value");
+    const nextOne = document.querySelector(".next-1");
+    const nextTwo = document.querySelector(".next-2");
+    
+    
+    nextOne.style.display = "none";
+    nextTwo.style.display = "none";
+
+const lanjut = () => {
+    const expected = valueInput.value
+    valueName.innerHTML = `" Hai...${expected} "`
+    if(!expected == ""){
+        var audio = new Audio("bersamamu.mp3")
+
+        audio.play()
+        inputName.style.display = "none";
+        nextOne.style.display = "flex";
+    }else{
+        alert("Nama Tidak Boleh Kosong")
+    }
+}
+const imgBox = document.querySelector(".box-img")
+const a = document.getElementById("a");
+const b = document.getElementById("b");
+const c = document.getElementById("c");
+const d = document.getElementById("d");
+const e = document.getElementById("e");
+const range = document.querySelector(".range");
+
+imgBox.style.display = "none";
+a.style.display = "flex";
+b.style.display = "none";
+c.style.display = "none";
+d.style.display = "none";
+e.style.display = "none";
+range.style.display = "none";
+
+const onNext = () => {
+    imgBox.style.display = "flex";
+    nextTwo.style.display = "flex";
+    nextOne.style.display = "none";
+    const valueInput1 = document.querySelector("input").value;
+    const expected = valueInput.value
+    setTimeout(() =>{
+        a.style.display = "flex";
+        setTimeout(() =>{
+            b.style.display = "flex";
+        },4000)
+        
+        setTimeout(() =>{
+            c.style.display = "flex";
+        },8000)
+
+        setTimeout(() =>{
+            d.style.display = "flex";
+        },12000)
+
+        setTimeout(() =>{
+            e.style.display = "flex";
+            e.innerHTML = `"Dari: Rizky Zulkarnain Untuk ${expected}"`;
+        },14000)
+        setTimeout(() =>{
+            boxLanjut.style.display = "flex";
+        },19000)
+    },)
+}
+
+const boxLanjut = document.querySelector(".box-lanjut")
+const boxTanya = document.querySelector(".box-tanya")
+const wa = document.querySelector(".wa")
+
+wa.style.display = "none";
+boxLanjut.style.display = "none";
+boxTanya.style.display = "none";
+
+const btnLanjut = () =>{
+    boxLanjut.style.display = "none";
+    boxTanya.style.display = "flex";
+}
+const textLast = document.querySelector(".box-lasttext")
+
+textLast.style.display = "none"
+
+const btnYes = () => {
+    textLast.style.display = "flex"
+    range.style.display = "flex";
+    boxTanya.style.display = "none";
+    const valueInput1 = document.querySelector("input").value;
+    const expected = valueInput.value
+
+    textLast.innerHTML =`Rizky Zulkarnain ❤ ${expected}`
+}
+ 
+const last = () => {
+    wa.style.display = "flex";
+    range.style.display = "none";
+}
+
+var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+        };
+function kirim() {
+
+    // Ganti nomor berikut dengan nomor tujuan di format internasional tanpa tanda '+' atau '00'
+    var nomorTujuan = '+6282371169663';
+
+    // Membuka aplikasi WhatsApp dengan URL khusus
+    var whatsappURL = 'https://wa.me/' + nomorTujuan ;
+    window.location.href = whatsappURL;
+}
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
